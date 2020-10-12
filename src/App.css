@@ -134,21 +134,273 @@ table {
   border-spacing: 0;
 }
 
-@font-face {
-  font-family: "globersemibold_free";
-  src: url("/fonts/glober_semibold_free-webfont.woff2") format("woff2"), url("/fonts/glober_semibold_free-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "globerthin_free";
-  src: url("/fonts/glober_thin_free-webfont.woff2") format("woff2"), url("/fonts/glober_thin_free-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
 body {
-  font-family: "globersemibold_free", "globerthin_free", sans-serif;
+  font-family: "Lato";
+  background-color: #005ca7;
+}
+
+.main--container {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.page {
+  position: absolute;
+  width: 95%;
+  height: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.page.page02 {
+  position: absolute;
+  bottom: 0;
+  height: 75%;
+  width: 100%;
+  background-color: white;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 75% 25%;
+      grid-template-columns: 75% 25%;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+}
+
+.fotka--tlo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(./img/czasteczka_tlo_01.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.tlo {
+  width: 100vw;
+  min-width: 100vw;
+  height: 100vh;
+  min-height: 100vh;
+}
+
+.logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+}
+
+.footer {
+  position: absolute;
+  width: 100%;
+  height: 12vw;
+  background-color: white;
+  bottom: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+}
+
+.footer .icon {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer .icon img {
+  height: 90%;
+}
+
+.footer .icon.dalej {
+  margin-left: 3vw;
+  cursor: pointer;
+}
+
+.content {
+  width: 100%;
+  height: 65%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 30% 50% 20%;
+      grid-template-rows: 30% 50% 20%;
+}
+
+.content.page02 {
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 20% 60% 20%;
+      grid-template-rows: 20% 60% 20%;
+}
+
+.content.page02 .headline--image {
+  height: 90%;
+  max-height: 90%;
+  opacity: 1;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-animation: headline 1s ease-out;
+          animation: headline 1s ease-out;
+}
+
+@-webkit-keyframes headline {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100vw);
+            transform: translateX(-100vw);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0vw);
+            transform: translateX(0vw);
+  }
+}
+
+@keyframes headline {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100vw);
+            transform: translateX(-100vw);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0vw);
+            transform: translateX(0vw);
+  }
+}
+
+.content .headline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.content h1,
+.content h3 {
+  color: white;
+  font-size: 3vw;
+  font-weight: 800;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.8);
+  display: inline-block;
+}
+
+.content h3 {
+  font-size: 2vw;
+}
+
+.content .paczka {
+  width: auto;
+  height: 90%;
+  max-height: 90%;
+  -webkit-filter: drop-shadow(-1.5rem 1rem 2rem rgba(0, 0, 0, 0.6));
+          filter: drop-shadow(-1.5rem 1rem 2rem rgba(0, 0, 0, 0.6));
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.presentation {
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 35% 30% 35%;
+      grid-template-columns: 35% 30% 35%;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+}
+
+.presentation .tubka--image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.presentation .tubka--image img {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  max-height: 100%;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.presentation--side {
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 30% 70%;
+      grid-template-rows: 30% 70%;
+}
+
+.presentation--side video {
+  width: 100%;
+  max-width: 100%;
 }
 /*# sourceMappingURL=App.css.map */

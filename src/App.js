@@ -1,11 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
+import Background from "./components/Background";
+import Page01 from "./components/Page01";
+import Page02 from "./components/Page02";
 
 function App() {
+  const [show, setShow] = useState("showPage02");
+
+  const handleShow = (showComponent) => {
+    setShow(showComponent);
+  };
   return (
-    <div className="App">
-      <h1>DUPA</h1>
-    </div>
+    <main className="main--container">
+      <Background />
+      {show === "showPage01" && <Page01 show={handleShow} />}
+      {/* <Page01 show={handleShow} /> */}
+      {show === "showPage02" && <Page02 />}
+    </main>
   );
 }
 
