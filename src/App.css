@@ -403,4 +403,212 @@ body {
   width: 100%;
   max-width: 100%;
 }
+
+.presentation--side.right {
+  -ms-grid-rows: 80% 20%;
+      grid-template-rows: 80% 20%;
+}
+
+.molecule {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-filter: drop-shadow(0 4rem 0.5rem rgba(0, 0, 0, 0.2));
+          filter: drop-shadow(0 4rem 0.5rem rgba(0, 0, 0, 0.2));
+}
+
+.molecule.chlorheksydyna {
+  background-image: url(../src/img/molekula_02_3D-2.gif);
+  z-index: 100;
+}
+
+.molecule.glicerol {
+  background-image: url(../src/img/molekula_01_3D.gif);
+  z-index: 100;
+}
+
+.molecule.no--alco {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 80%;
+      grid-template-columns: 20% 80%;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  background-image: url(../src/img/no_alco.svg);
+  -webkit-filter: drop-shadow(0 0rem 0rem rgba(0, 0, 0, 0));
+          filter: drop-shadow(0 0rem 0rem rgba(0, 0, 0, 0));
+}
+
+.molecule.about--glicerol {
+  background-image: url(../src/img/o_glicerolu.svg);
+  -webkit-filter: drop-shadow(0 1rem 0.2rem rgba(0, 0, 0, 0));
+          filter: drop-shadow(0 1rem 0.2rem rgba(0, 0, 0, 0));
+  -webkit-animation: slide 1.5s ease-out;
+          animation: slide 1.5s ease-out;
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  opacity: 1;
+}
+
+.molecule.about--chlorex {
+  background-image: url(../src/img/o_chlorchex.svg);
+  -webkit-filter: drop-shadow(0 0.7rem 0.2rem rgba(0, 0, 0, 0));
+          filter: drop-shadow(0 0.7rem 0.2rem rgba(0, 0, 0, 0));
+  -webkit-animation: slide 1.5s ease-out;
+          animation: slide 1.5s ease-out;
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  opacity: 1;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    -webkit-transform: translateY(200%);
+            transform: translateY(200%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes slide {
+  0% {
+    -webkit-transform: translateY(200%);
+            transform: translateY(200%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.three--pictures {
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3 1fr);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.three--pictures .red {
+  width: 100%;
+  height: 100%;
+  background-image: url(../src/img/protetyka.svg);
+  -webkit-animation: tootsie 1.5s ease-out;
+          animation: tootsie 1.5s ease-out;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  opacity: 1;
+}
+
+.three--pictures .green {
+  width: 100%;
+  height: 100%;
+  background-image: url(../src/img/periodontologia.svg);
+  -webkit-animation: tootsie 2s ease-out;
+          animation: tootsie 2s ease-out;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  opacity: 1;
+}
+
+.three--pictures .blue {
+  width: 100%;
+  height: 100%;
+  background-image: url(../src/img/chirurgia.svg);
+  -webkit-animation: tootsie 2.5s ease-out;
+          animation: tootsie 2.5s ease-out;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  opacity: 1;
+}
+
+@-webkit-keyframes tootsie {
+  0% {
+    -webkit-transform: translateX(200%);
+            transform: translateX(200%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes tootsie {
+  0% {
+    -webkit-transform: translateX(200%);
+            transform: translateX(200%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+.back {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  background-image: url(../src/img/back_normal.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.dalej {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  background-image: url(../src/img/dalej_normal.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 /*# sourceMappingURL=App.css.map */

@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import molecule from "../video/molecule.mp4";
 
-const Page02 = () => {
-  const [showComponent, setShowComponent] = useState("showPage03");
+const Page02 = ({ show }) => {
+  const [showComponent, setShowComponent] = useState("");
   return (
     <>
       <div className="page page02">
@@ -16,17 +15,29 @@ const Page02 = () => {
           </div>
           <div className="presentation">
             <div className="presentation--side">
-              <video autoPlay loop>
-                <source src={molecule} type="video/mp4" />
-              </video>
+              <div className="molecule chlorheksydyna "></div>
+              <div className="molecule about--chlorex"></div>
             </div>
             <div className="tubka--image">
               <img src={require("../img/tubka.jpg")} alt="" />
             </div>
-            <div></div>
+            <div className="presentation--side">
+              <div className="molecule glicerol"></div>
+              <div className="molecule about--glicerol"></div>
+            </div>
           </div>
-          <h3>O specjalnie przystosowanej formule:</h3>
+          <div className="molecule no--alco">
+            <div onClick={() => show("showPage01")} className="back"></div>
+          </div>
         </section>
+        <div className="presentation--side right">
+          <div className="three--pictures">
+            <div className="red"></div>
+            <div className="green"></div>
+            <div className="blue"></div>
+          </div>
+          <div className="dalej"></div>
+        </div>
       </div>
     </>
   );
