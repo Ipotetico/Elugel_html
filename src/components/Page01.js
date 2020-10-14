@@ -1,13 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 
 const Page01 = ({ show }) => {
-  const [showComponent, setShowComponent] = useState("showPage01");
-
   return (
     <>
       <div className="page">
         <section className="content">
-          <div class="headline">
+          <div className="headline">
             <h1>
               SPECJALISTYCZNY ŻEL STOMATOLOGICZNY
               <br />Z 0,2% Chlorheksydyna

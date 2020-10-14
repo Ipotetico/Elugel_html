@@ -137,6 +137,7 @@ table {
 body {
   font-family: "Lato";
   background-color: #005ca7;
+  overflow: hidden;
 }
 
 .main--container {
@@ -178,6 +179,20 @@ body {
   display: grid;
   -ms-grid-columns: 75% 25%;
       grid-template-columns: 75% 25%;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+}
+
+.page.page03 {
+  position: absolute;
+  bottom: 0;
+  height: 75%;
+  width: 100%;
+  background-color: white;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
 }
@@ -260,17 +275,7 @@ body {
       grid-template-rows: 30% 50% 20%;
 }
 
-.content.page02 {
-  height: 100%;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  -ms-grid-rows: 20% 60% 20%;
-      grid-template-rows: 20% 60% 20%;
-}
-
-.content.page02 .headline--image {
+.content .headline--image {
   height: 90%;
   max-height: 90%;
   opacity: 1;
@@ -304,6 +309,42 @@ body {
     -webkit-transform: translateX(0vw);
             transform: translateX(0vw);
   }
+}
+
+.content.page02 {
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 20% 60% 20%;
+      grid-template-rows: 20% 60% 20%;
+}
+
+.content.page03 {
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 20% 60% 5% 15%;
+      grid-template-rows: 20% 60% 5% 15%;
+}
+
+.content.page03 .headline img {
+  height: 90%;
+  max-height: 90%;
+}
+
+.content.page03 .buttons {
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
 }
 
 .content .headline {
@@ -610,5 +651,120 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.button {
+  width: 70%;
+  height: 60%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  background-color: #ccd615;
+  border: none;
+  border-radius: 2rem;
+  color: white;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.popup {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  background-color: white;
+  z-index: 100;
+  border-radius: 2rem;
+  border: 1px solid #ccd615;
+  -webkit-box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.6);
+          box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.6);
+  -webkit-animation: showUp 0.5s ease-out;
+          animation: showUp 0.5s ease-out;
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  overflow: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 10% 90%;
+      grid-template-rows: 10% 90%;
+}
+
+.popup h1 {
+  font-size: 3rem;
+  color: #005ca7;
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  line-height: 4rem;
+}
+
+.popup h1 sup {
+  vertical-align: super;
+  font-size: 1.5rem;
+}
+
+@-webkit-keyframes showUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes showUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.popup .close {
+  position: relative;
+  background-color: #ccd615;
+  width: 3vw;
+  height: 3vw;
+  right: -76vw;
+  top: 1vw;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  cursor: pointer;
+}
+
+p {
+  font-size: 0.4rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 /*# sourceMappingURL=App.css.map */

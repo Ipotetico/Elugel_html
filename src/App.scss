@@ -5,6 +5,7 @@
 body {
   font-family: "Lato";
   background-color: $elugel_blue;
+  overflow: hidden;
 }
 
 .main--container {
@@ -31,6 +32,17 @@ body {
     background-color: white;
     display: grid;
     grid-template-columns: 75% 25%;
+    grid-template-rows: 1fr;
+  }
+
+  &.page03 {
+    position: absolute;
+    bottom: 0;
+    height: 75%;
+    width: 100%;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr;
   }
 }
@@ -96,29 +108,51 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: 30% 50% 20%;
 
+  .headline--image {
+    height: 90%;
+    max-height: 90%;
+    opacity: 1;
+    transform: translateX(0);
+    animation: headline 1s ease-out;
+
+    @keyframes headline {
+      0% {
+        opacity: 0;
+        transform: translateX(-100vw);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0vw);
+      }
+    }
+  }
+
   &.page02 {
     height: 100%;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 20% 60% 20%;
+  }
 
-    .headline--image {
-      height: 90%;
-      max-height: 90%;
-      opacity: 1;
-      transform: translateX(0);
-      animation: headline 1s ease-out;
+  &.page03 {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% 60% 5% 15%;
 
-      @keyframes headline {
-        0% {
-          opacity: 0;
-          transform: translateX(-100vw);
-        }
-        100% {
-          opacity: 1;
-          transform: translateX(0vw);
-        }
+    .headline {
+      img {
+        height: 90%;
+        max-height: 90%;
       }
+    }
+
+    .buttons {
+      width: 100%;
+      height: 100%;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 1fr;
     }
   }
 
@@ -332,4 +366,83 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.button {
+  width: 70%;
+  height: 60%;
+  align-self: center;
+  justify-self: center;
+  background-color: $elugel_green;
+  border: none;
+  border-radius: 2rem;
+  color: white;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.popup {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  background-color: white;
+  z-index: 100;
+  border-radius: 2rem;
+  border: 1px solid $elugel_green;
+  box-shadow: 0 2rem 5rem rgba(black, 0.6);
+  animation: showUp 0.5s ease-out;
+  opacity: 1;
+  transform: scale(1);
+  overflow: hidden;
+  transition: 0.5s;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 10% 90%;
+
+  h1 {
+    font-size: 3rem;
+    color: $elugel_blue;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    line-height: 4rem;
+
+    sup {
+      vertical-align: super;
+      font-size: 1.5rem;
+    }
+  }
+
+  @keyframes showUp {
+    0% {
+      opacity: 0;
+      transform: scale(0.6);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  .close {
+    position: relative;
+    background-color: $elugel_green;
+    width: 3vw;
+    height: 3vw;
+    right: -76vw;
+    top: 1vw;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+p {
+  font-size: 0.4rem;
+
+  align-self: center;
+  justify-self: center;
 }

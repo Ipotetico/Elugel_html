@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 
 const Page02 = ({ show }) => {
-  const [showComponent, setShowComponent] = useState("");
   return (
     <>
       <div className="page page02">
@@ -36,7 +35,7 @@ const Page02 = ({ show }) => {
             <div className="green"></div>
             <div className="blue"></div>
           </div>
-          <div className="dalej"></div>
+          <div onClick={() => show("showPage03")} className="dalej"></div>
         </div>
       </div>
     </>
