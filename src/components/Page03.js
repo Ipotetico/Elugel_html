@@ -32,13 +32,12 @@ const Page03 = ({ show }) => {
       )}
       <div className="page page03">
         <section className="content page03">
-          <div className="headline">
-            <img
-              className="headline--image"
-              src={klinicznie_potwierdzona}
-              alt=""
-            />
-          </div>
+          <img
+            className="headline--image"
+            src={klinicznie_potwierdzona}
+            alt=""
+          />
+
           <div className="tubka--image">
             <img src={wykres03} alt="" />
           </div>

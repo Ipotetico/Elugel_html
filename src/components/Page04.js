@@ -1,8 +1,5 @@
 import React, { useState } from "react";
 import aseptyka from "../img/antyseptyka_mozliwa.svg";
-import stosowanie from "../img/stosowanie_antybiotykow.svg";
-import strzalka from "../img/strzalka.svg";
-import nieZaleca from "../img/nie_zaleca_sie.svg";
 
 const Page04 = ({ show }) => {
   const [showPopup, setShowPopup] = useState("");
@@ -37,21 +34,18 @@ const Page04 = ({ show }) => {
       )}
       <div className="page page03">
         <section className="content page04">
-          <div className="headline">
-            <img className="headline--image" src={aseptyka} alt="" />
-          </div>
+          <img src={aseptyka} alt="" className="headline--image" />
+
           <div className="page04">
-            <img
+            <div
               onClick={() => setShowPopup("first")}
-              src={stosowanie}
-              alt=""
-            />
-            <img id="strzalka" src={strzalka} alt="" />
-            <img
+              className="pudelko-na-fote"
+            ></div>
+            <div id="strzalka" className="pudelko-na-fote"></div>
+            <div
               onClick={() => setShowPopup("second")}
-              src={nieZaleca}
-              alt=""
-            />
+              className="pudelko-na-fote"
+            ></div>
           </div>
           <p>
             *T. Kaczmarzyk i inni, Rekomendacje Grupy Roboczej Polskiego

@@ -276,13 +276,20 @@ body {
 }
 
 .content .headline--image {
-  height: 90%;
-  max-height: 90%;
+  height: 100%;
+  max-height: 100%;
   opacity: 1;
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+  -webkit-transform: translateX(12vw);
+          transform: translateX(12vw);
   -webkit-animation: headline 1s ease-out;
           animation: headline 1s ease-out;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content .headline--image:nth-of-type(3) {
+  background-image: url(../src/img/miejscowa_antyseptyka.svg);
 }
 
 @-webkit-keyframes headline {
@@ -293,8 +300,8 @@ body {
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateX(0vw);
-            transform: translateX(0vw);
+    -webkit-transform: translateX(12vw);
+            transform: translateX(12vw);
   }
 }
 
@@ -306,8 +313,8 @@ body {
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateX(0vw);
-            transform: translateX(0vw);
+    -webkit-transform: translateX(12vw);
+            transform: translateX(12vw);
   }
 }
 
@@ -363,6 +370,27 @@ body {
 }
 
 .content.page04 .buttons {
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+}
+
+.content.page05 {
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 20% 40% 20% 5% 15%;
+      grid-template-rows: 20% 40% 20% 5% 15%;
+}
+
+.content.page05 .buttons {
   width: 100%;
   height: 100%;
   display: -ms-grid;
@@ -796,6 +824,11 @@ p {
       justify-self: center;
 }
 
+p sup {
+  vertical-align: super;
+  font-size: 0.2rem;
+}
+
 .page04 {
   display: -ms-grid;
   display: grid;
@@ -803,6 +836,26 @@ p {
       grid-template-columns: 45% 10% 45%;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
+}
+
+.page04 .pudelko-na-fote {
+  width: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page04 .pudelko-na-fote:nth-of-type(1) {
+  background-image: url(../src/img/stosowanie_antybiotykow.svg);
+}
+
+.page04 .pudelko-na-fote:nth-of-type(2) {
+  background-image: url(../src/img/strzalka.svg);
+}
+
+.page04 .pudelko-na-fote:nth-of-type(3) {
+  background-image: url(../src/img/nie_zaleca_sie.svg);
 }
 
 .page04 img {
@@ -849,5 +902,86 @@ p {
     -webkit-transform: translateX(-10%);
             transform: translateX(-10%);
   }
+}
+
+.pudelko--05 {
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+}
+
+.pudelko--05 .obrazek--05 {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.pudelko--05 .obrazek--05:nth-of-type(1) {
+  background-image: url(../src/img/bezposrednia_aplikacja.svg);
+  -webkit-animation: arrow_moves 1.5s infinite ease-in-out;
+          animation: arrow_moves 1.5s infinite ease-in-out;
+  -webkit-transform: translateX(20%);
+          transform: translateX(20%);
+}
+
+@-webkit-keyframes arrow_moves {
+  0% {
+    -webkit-transform: translateX(20%);
+            transform: translateX(20%);
+  }
+  50% {
+    -webkit-transform: translateX(30%);
+            transform: translateX(30%);
+  }
+  100% {
+    -webkit-transform: translateX(20%);
+            transform: translateX(20%);
+  }
+}
+
+@keyframes arrow_moves {
+  0% {
+    -webkit-transform: translateX(20%);
+            transform: translateX(20%);
+  }
+  50% {
+    -webkit-transform: translateX(30%);
+            transform: translateX(30%);
+  }
+  100% {
+    -webkit-transform: translateX(20%);
+            transform: translateX(20%);
+  }
+}
+
+.pudelko--05 .obrazek--05:nth-of-type(2) {
+  background-image: url(../src/img/Elugel_paczka_02.gif);
+  -webkit-filter: drop-shadow(0 1rem 1rem rgba(0, 0, 0, 0.5));
+          filter: drop-shadow(0 1rem 1rem rgba(0, 0, 0, 0.5));
+}
+
+.obrazek--05-02 {
+  width: 100%;
+  height: 100%;
+  background-image: url(../src/img/miejscowo_dzialajacy.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 /*# sourceMappingURL=App.css.map */
