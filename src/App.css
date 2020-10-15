@@ -347,6 +347,32 @@ body {
       grid-template-rows: 1fr;
 }
 
+.content.page04 {
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 25% 55% 5% 15%;
+      grid-template-rows: 25% 55% 5% 15%;
+}
+
+.content.page04 .headline img {
+  height: 90%;
+  max-height: 90%;
+}
+
+.content.page04 .buttons {
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+}
+
 .content .headline {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -693,6 +719,8 @@ body {
       grid-template-columns: 1fr;
   -ms-grid-rows: 10% 90%;
       grid-template-rows: 10% 90%;
+  background: -webkit-gradient(linear, left bottom, left top, from(white), to(#f0f768));
+  background: linear-gradient(0deg, white 0%, #f0f768 100%);
 }
 
 .popup h1 {
@@ -766,5 +794,60 @@ p {
       align-self: center;
   -ms-grid-column-align: center;
       justify-self: center;
+}
+
+.page04 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 45% 10% 45%;
+      grid-template-columns: 45% 10% 45%;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+}
+
+.page04 img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  cursor: pointer;
+}
+
+.page04 #strzalka {
+  -webkit-transform: translateX(-5%);
+          transform: translateX(-5%);
+  -webkit-animation: arrow 1s infinite ease-in-out;
+          animation: arrow 1s infinite ease-in-out;
+}
+
+@-webkit-keyframes arrow {
+  0% {
+    -webkit-transform: translateX(-10%);
+            transform: translateX(-10%);
+  }
+  50% {
+    -webkit-transform: translateX(10%);
+            transform: translateX(10%);
+  }
+  100% {
+    -webkit-transform: translateX(-10%);
+            transform: translateX(-10%);
+  }
+}
+
+@keyframes arrow {
+  0% {
+    -webkit-transform: translateX(-10%);
+            transform: translateX(-10%);
+  }
+  50% {
+    -webkit-transform: translateX(10%);
+            transform: translateX(10%);
+  }
+  100% {
+    -webkit-transform: translateX(-10%);
+            transform: translateX(-10%);
+  }
 }
 /*# sourceMappingURL=App.css.map */
