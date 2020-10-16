@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import niezbedny from "../img/niebedny_element.svg";
+import kompleksowa from "../img/kompleksowa_opieka.svg";
 
-const Page05 = ({ show }) => {
+const Page06 = ({ show }) => {
   const [showPopup, setShowPopup] = useState("");
 
   return (
@@ -33,28 +34,27 @@ const Page05 = ({ show }) => {
         </div>
       )}
       <div className="page page03">
-        <section className="content page05">
-          <img src={niezbedny} alt="" className="headline--image" />
+        <section className="content page06">
+          <img src={kompleksowa} alt="" className="headline--image" />
 
           <div className="page05">
-            <div className="pudelko--05">
-              <div className="obrazek--05"></div>
-              <div className="obrazek--05"></div>
+            <div className="pudelko--06">
+              <div className="obrazek--06"></div>
             </div>
           </div>
-          <div className="obrazek--05-02"></div>
+          <div className="obrazek--06"></div>
+          <div className="obrazek--06"></div>
           <p>
-            <sup>(2)</sup>Dominiak M, Shuleva S, Silvestros S, Alcoforado G. A
-            prospective observational study on perioperative use of
-            antibacterial agents in implant surgery [published online as ahead
-            of print on March 26, 2020]. Adv Clin Exp Med. 2020;29(3).
-            doi:10.17219/acem/115087
+            <sup>(2)</sup>T. Kaczmarzyk i inni, Rekomendacje Grupy Roboczej
+            Polskiego Towarzystwa Stomatologicznego i Narodowego Programu
+            Ochrony Antybiotyków w zakresie stosowania antybiotyków w
+            stomatologii. Narodowy Instytut Leków, Warszawa 2019
           </p>
           <div className="buttons">
-            <div onClick={() => show("showPage04")} className="back"></div>
+            <div onClick={() => show("showPage05")} className="back"></div>
             <div></div>
             <div></div>
-            <div onClick={() => show("showPage06")} className="dalej"></div>
+            <div onClick={() => show("showPage07")} className="dalej"></div>
           </div>
         </section>
       </div>
@@ -62,4 +62,4 @@ const Page05 = ({ show }) => {
   );
 };
 
-export default Page05;
+export default Page06;
