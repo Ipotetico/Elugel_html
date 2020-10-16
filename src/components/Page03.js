@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import klinicznie_potwierdzona from "../img/klinicznie_potwierdzona.svg";
 import wykres03 from "../img/wykres_str_03.svg";
 
 const Page03 = ({ show }) => {

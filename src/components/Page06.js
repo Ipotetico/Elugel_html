@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import niezbedny from "../img/niebedny_element.svg";
 import kompleksowa from "../img/kompleksowa_opieka.svg";
 
 const Page06 = ({ show }) => {

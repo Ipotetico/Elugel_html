@@ -431,6 +431,107 @@ body {
       grid-template-rows: 1fr;
 }
 
+.content.page07 {
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 20% 60% 5% 15%;
+      grid-template-rows: 20% 60% 5% 15%;
+}
+
+.content.page07 .headline img {
+  height: 90%;
+  max-height: 90%;
+}
+
+.content.page07 .pudelko-na-fote {
+  width: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content.page07 .pudelko-na-fote.fotka-07 {
+  width: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content.page07 .pudelko-na-fote.fotka-07:nth-of-type(1) {
+  background-image: url(../src/img/fotka_str_07.png);
+}
+
+.content.page07 .pudelko-na-fote.fotka-07:nth-of-type(2) {
+  background-image: url(../src/img/strzalka.svg);
+}
+
+.content.page07 .five-pictures {
+  width: 100%;
+  height: 55%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  gap: 1vw;
+  -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.content.page07 .five-pictures .picture-page-07 {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-animation: picture07 0.5s ease-in-out;
+          animation: picture07 0.5s ease-in-out;
+}
+
+@-webkit-keyframes picture07 {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes picture07 {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.content.page07 .buttons {
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+}
+
 .content .headline {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -934,13 +1035,88 @@ p sup {
   }
 }
 
+.page07 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 25% 40%;
+      grid-template-columns: 30% 25% 40%;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+}
+
+.page07 .pudelko-na-fote {
+  width: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page07 .pudelko-na-fote:nth-of-type(1) {
+  background-image: url(../src/img/stosowanie_antybiotykow.svg);
+}
+
+.page07 .pudelko-na-fote:nth-of-type(2) {
+  background-image: url(../src/img/graphic_page_07.svg);
+}
+
+.page07 .pudelko-na-fote:nth-of-type(3) {
+  background-image: url(../src/img/nie_zaleca_sie.svg);
+}
+
+.page07 img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  cursor: pointer;
+}
+
+.page07 #strzalka {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  -webkit-animation: arrow_two 1s infinite ease-in-out;
+          animation: arrow_two 1s infinite ease-in-out;
+}
+
+@-webkit-keyframes arrow_two {
+  0% {
+    -webkit-transform: translateX(-10%);
+            transform: translateX(-10%);
+  }
+  50% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-10%);
+            transform: translateX(-10%);
+  }
+}
+
+@keyframes arrow_two {
+  0% {
+    -webkit-transform: translateX(-10%);
+            transform: translateX(-10%);
+  }
+  50% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-10%);
+            transform: translateX(-10%);
+  }
+}
+
 .pudelko--05 {
   width: 100%;
   height: 100%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 35% 65%;
+      grid-template-columns: 35% 65%;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
 }
@@ -1045,8 +1221,9 @@ p sup {
 
 .obrazek--06:nth-of-type(1) {
   background-image: url(../src/img/pudlo_zestaw.gif);
-  -webkit-filter: drop-shadow(0 1rem 1rem rgba(0, 0, 0, 0.5));
-          filter: drop-shadow(0 1rem 1rem rgba(0, 0, 0, 0.5));
+  -webkit-filter: drop-shadow(0 0rem 0.6rem rgba(0, 0, 0, 0.5));
+          filter: drop-shadow(0 0rem 0.6rem rgba(0, 0, 0, 0.5));
+  z-index: 100;
 }
 
 .obrazek--06:nth-of-type(2) {
