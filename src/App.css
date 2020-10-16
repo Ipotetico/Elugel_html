@@ -431,7 +431,7 @@ body {
       grid-template-rows: 1fr;
 }
 
-.content.page07 {
+.content.page_content_07 {
   height: 100%;
   display: -ms-grid;
   display: grid;
@@ -441,12 +441,51 @@ body {
       grid-template-rows: 20% 60% 5% 15%;
 }
 
-.content.page07 .headline img {
+.content.page_content_07 .headline img {
   height: 90%;
   max-height: 90%;
 }
 
-.content.page07 .pudelko-na-fote {
+.content.page_content_07 .headline .headline--image {
+  height: 100%;
+  max-height: 100%;
+  opacity: 1;
+  -webkit-transform: translateX(4vw);
+          transform: translateX(4vw);
+  -webkit-animation: headline_07 1s ease-out;
+          animation: headline_07 1s ease-out;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@-webkit-keyframes headline_07 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100vw);
+            transform: translateX(-100vw);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(4vw);
+            transform: translateX(4vw);
+  }
+}
+
+@keyframes headline_07 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100vw);
+            transform: translateX(-100vw);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(4vw);
+            transform: translateX(4vw);
+  }
+}
+
+.content.page_content_07 .pudelko-na-fote {
   width: 100%;
   width: 100%;
   background-position: center;
@@ -454,7 +493,7 @@ body {
   background-size: cover;
 }
 
-.content.page07 .pudelko-na-fote.fotka-07 {
+.content.page_content_07 .pudelko-na-fote.fotka-07 {
   width: 100%;
   width: 100%;
   background-position: center;
@@ -462,31 +501,53 @@ body {
   background-size: cover;
 }
 
-.content.page07 .pudelko-na-fote.fotka-07:nth-of-type(1) {
+.content.page_content_07 .pudelko-na-fote.fotka-07:nth-of-type(1) {
   background-image: url(../src/img/fotka_str_07.png);
 }
 
-.content.page07 .pudelko-na-fote.fotka-07:nth-of-type(2) {
+.content.page_content_07 .pudelko-na-fote.fotka-07:nth-of-type(2) {
   background-image: url(../src/img/strzalka.svg);
 }
 
-.content.page07 .five-pictures {
+.content.page_content_07 .five-pictures {
   width: 100%;
-  height: 55%;
+  height: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.content.page_content_07 .five-pictures .in-five-pictures {
   display: -ms-grid;
   display: grid;
+  width: 100%;
+  height: 50%;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
-  -ms-grid-rows: (1fr)[2];
-      grid-template-rows: repeat(2, 1fr);
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
   gap: 1vw;
   -ms-grid-row-align: center;
       align-self: center;
   -ms-grid-column-align: center;
       justify-self: center;
+  margin-bottom: 0.5vw;
 }
 
-.content.page07 .five-pictures .picture-page-07 {
+.content.page_content_07 .five-pictures .in-five-pictures:nth-of-type(2) {
+  margin-bottom: 0vw;
+  margin-top: 0.5vw;
+  -ms-grid-columns: 16.5% 1fr 1fr 16.5%;
+      grid-template-columns: 16.5% 1fr 1fr 16.5%;
+}
+
+.content.page_content_07 .five-pictures .in-five-pictures .picture-page-07 {
   width: 100%;
   max-width: 100%;
   height: auto;
@@ -497,6 +558,27 @@ body {
           transform: scale(1);
   -webkit-animation: picture07 0.5s ease-in-out;
           animation: picture07 0.5s ease-in-out;
+  border-radius: 0.3rem;
+}
+
+.content.page_content_07 .five-pictures .in-five-pictures .picture-page-07:nth-of-type(1) {
+  background-image: url(../src/img/zeby_str_07_01.jpg);
+}
+
+.content.page_content_07 .five-pictures .in-five-pictures .picture-page-07:nth-of-type(2) {
+  background-image: url(../src/img/zeby_str_07_02.jpg);
+}
+
+.content.page_content_07 .five-pictures .in-five-pictures .picture-page-07:nth-of-type(3) {
+  background-image: url(../src/img/zeby_str_07_03.jpg);
+}
+
+.content.page_content_07 .five-pictures .in-five-pictures .picture-page-07:nth-of-type(4) {
+  background-image: url(../src/img/zeby_str_07_04.jpg);
+}
+
+.content.page_content_07 .five-pictures .in-five-pictures .picture-page-07:nth-of-type(5) {
+  background-image: url(../src/img/zeby_str_07_05.jpg);
 }
 
 @-webkit-keyframes picture07 {
@@ -521,7 +603,7 @@ body {
   }
 }
 
-.content.page07 .buttons {
+.content.page_content_07 .buttons {
   width: 100%;
   height: 100%;
   display: -ms-grid;
@@ -530,6 +612,84 @@ body {
       grid-template-columns: repeat(4, 1fr);
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
+}
+
+.content.page_content_08 {
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 20% 20% 45% 15%;
+      grid-template-rows: 20% 20% 45% 15%;
+}
+
+.content.page_content_08 .buttons {
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+}
+
+.content.page_content_08 .pudelko-na-fote {
+  width: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content.page_content_08 .pudelko-na-fote:nth-of-type(1) {
+  background-image: url(../src/img/40_ml.svg);
+}
+
+.content.page_content_08 .pudelko-na-fote:nth-of-type(2) {
+  background-image: url(../src/img/Elugel_paczka_03.gif);
+  -webkit-filter: drop-shadow(0 1rem 1rem rgba(0, 0, 0, 0.5));
+          filter: drop-shadow(0 1rem 1rem rgba(0, 0, 0, 0.5));
+}
+
+.content.page_content_08 .headline--image {
+  height: 100%;
+  max-height: 100%;
+  opacity: 1;
+  -webkit-transform: translateX(4vw);
+          transform: translateX(4vw);
+  -webkit-animation: headline_08 1s ease-out;
+          animation: headline_08 1s ease-out;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@-webkit-keyframes headline_08 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100vw);
+            transform: translateX(-100vw);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(4vw);
+            transform: translateX(4vw);
+  }
+}
+
+@keyframes headline_08 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100vw);
+            transform: translateX(-100vw);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(4vw);
+            transform: translateX(4vw);
+  }
 }
 
 .content .headline {
@@ -1035,81 +1195,6 @@ p sup {
   }
 }
 
-.page07 {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 30% 25% 40%;
-      grid-template-columns: 30% 25% 40%;
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
-}
-
-.page07 .pudelko-na-fote {
-  width: 100%;
-  width: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.page07 .pudelko-na-fote:nth-of-type(1) {
-  background-image: url(../src/img/stosowanie_antybiotykow.svg);
-}
-
-.page07 .pudelko-na-fote:nth-of-type(2) {
-  background-image: url(../src/img/graphic_page_07.svg);
-}
-
-.page07 .pudelko-na-fote:nth-of-type(3) {
-  background-image: url(../src/img/nie_zaleca_sie.svg);
-}
-
-.page07 img {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  cursor: pointer;
-}
-
-.page07 #strzalka {
-  -webkit-transform: translateX(0%);
-          transform: translateX(0%);
-  -webkit-animation: arrow_two 1s infinite ease-in-out;
-          animation: arrow_two 1s infinite ease-in-out;
-}
-
-@-webkit-keyframes arrow_two {
-  0% {
-    -webkit-transform: translateX(-10%);
-            transform: translateX(-10%);
-  }
-  50% {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
-  }
-  100% {
-    -webkit-transform: translateX(-10%);
-            transform: translateX(-10%);
-  }
-}
-
-@keyframes arrow_two {
-  0% {
-    -webkit-transform: translateX(-10%);
-            transform: translateX(-10%);
-  }
-  50% {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
-  }
-  100% {
-    -webkit-transform: translateX(-10%);
-            transform: translateX(-10%);
-  }
-}
-
 .pudelko--05 {
   width: 100%;
   height: 100%;
@@ -1232,5 +1317,80 @@ p sup {
 
 .obrazek--06:nth-of-type(3) {
   background-image: url(../src/img/antyseptyka_w_chirurgii.svg);
+}
+
+.page07 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 25% 40%;
+      grid-template-columns: 30% 25% 40%;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+}
+
+.page07 .pudelko-na-fote {
+  width: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page07 .pudelko-na-fote:nth-of-type(1) {
+  background-image: url(../src/img/stosowanie_antybiotykow.svg);
+}
+
+.page07 .pudelko-na-fote:nth-of-type(2) {
+  background-image: url(../src/img/graphic_page_07.svg);
+}
+
+.page07 .pudelko-na-fote:nth-of-type(3) {
+  background-image: url(../src/img/nie_zaleca_sie.svg);
+}
+
+.page07 img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  cursor: pointer;
+}
+
+.page07 #strzalka_07 {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  -webkit-animation: arrow_two 1s infinite ease-in-out;
+          animation: arrow_two 1s infinite ease-in-out;
+}
+
+@-webkit-keyframes arrow_two {
+  0% {
+    -webkit-transform: translateX(-10%);
+            transform: translateX(-10%);
+  }
+  50% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-10%);
+            transform: translateX(-10%);
+  }
+}
+
+@keyframes arrow_two {
+  0% {
+    -webkit-transform: translateX(-10%);
+            transform: translateX(-10%);
+  }
+  50% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-10%);
+            transform: translateX(-10%);
+  }
 }
 /*# sourceMappingURL=App.css.map */

@@ -224,7 +224,7 @@ body {
     }
   }
 
-  &.page07 {
+  &.page_content_07 {
     height: 100%;
     display: grid;
     grid-template-columns: 1fr;
@@ -234,6 +234,27 @@ body {
       img {
         height: 90%;
         max-height: 90%;
+      }
+      .headline--image {
+        height: 100%;
+        max-height: 100%;
+        opacity: 1;
+        transform: translateX(4vw);
+        animation: headline_07 1s ease-out;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        @keyframes headline_07 {
+          0% {
+            opacity: 0;
+            transform: translateX(-100vw);
+          }
+          100% {
+            opacity: 1;
+            transform: translateX(4vw);
+          }
+        }
       }
     }
 
@@ -262,31 +283,64 @@ body {
 
     .five-pictures {
       width: 100%;
-      height: 55%;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(2, 1fr);
-      gap: 1vw;
+      height: 70%;
+      display: flex;
+      flex-direction: column;
+
       align-self: center;
-      justify-self: center;
 
-      .picture-page-07 {
+      .in-five-pictures {
+        display: grid;
         width: 100%;
-        max-width: 100%;
-        height: auto;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        transform: scale(1);
-        animation: picture07 0.5s ease-in-out;
+        height: 50%;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        gap: 1vw;
+        align-self: center;
+        justify-self: center;
+        margin-bottom: 0.5vw;
 
-        @keyframes picture07 {
-          0% {
-            transform: scale(0);
+        &:nth-of-type(2) {
+          margin-bottom: 0vw;
+          margin-top: 0.5vw;
+          grid-template-columns: 16.5% 1fr 1fr 16.5%;
+        }
+
+        .picture-page-07 {
+          width: 100%;
+          max-width: 100%;
+          height: auto;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          transform: scale(1);
+          animation: picture07 0.5s ease-in-out;
+          border-radius: 0.3rem;
+
+          &:nth-of-type(1) {
+            background-image: url(../src/img/zeby_str_07_01.jpg);
+          }
+          &:nth-of-type(2) {
+            background-image: url(../src/img/zeby_str_07_02.jpg);
+          }
+          &:nth-of-type(3) {
+            background-image: url(../src/img/zeby_str_07_03.jpg);
+          }
+          &:nth-of-type(4) {
+            background-image: url(../src/img/zeby_str_07_04.jpg);
+          }
+          &:nth-of-type(5) {
+            background-image: url(../src/img/zeby_str_07_05.jpg);
           }
 
-          100% {
-            transform: scale(1);
+          @keyframes picture07 {
+            0% {
+              transform: scale(0);
+            }
+
+            100% {
+              transform: scale(1);
+            }
           }
         }
       }
@@ -298,6 +352,58 @@ body {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: 1fr;
+    }
+  }
+
+  &.page_content_08 {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% 20% 45% 15%;
+
+    .buttons {
+      width: 100%;
+      height: 100%;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 1fr;
+    }
+    .pudelko-na-fote {
+      width: 100%;
+      width: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      &:nth-of-type(1) {
+        background-image: url(../src/img/40_ml.svg);
+      }
+
+      &:nth-of-type(2) {
+        background-image: url(../src/img/Elugel_paczka_03.gif);
+        filter: drop-shadow(0 1rem 1rem rgba(black, 0.5));
+      }
+    }
+    .headline--image {
+      height: 100%;
+      max-height: 100%;
+      opacity: 1;
+      transform: translateX(4vw);
+      animation: headline_08 1s ease-out;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      @keyframes headline_08 {
+        0% {
+          opacity: 0;
+          transform: translateX(-100vw);
+        }
+        100% {
+          opacity: 1;
+          transform: translateX(4vw);
+        }
+      }
     }
   }
 
@@ -648,53 +754,6 @@ p {
   }
 }
 
-.page07 {
-  display: grid;
-  grid-template-columns: 30% 25% 40%;
-  grid-template-rows: 1fr;
-
-  .pudelko-na-fote {
-    width: 100%;
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    &:nth-of-type(1) {
-      background-image: url(../src/img/stosowanie_antybiotykow.svg);
-    }
-    &:nth-of-type(2) {
-      background-image: url(../src/img/graphic_page_07.svg);
-    }
-    &:nth-of-type(3) {
-      background-image: url(../src/img/nie_zaleca_sie.svg);
-    }
-  }
-
-  img {
-    align-self: center;
-    justify-self: center;
-    cursor: pointer;
-  }
-
-  #strzalka {
-    transform: translateX(0%);
-    animation: arrow_two 1s infinite ease-in-out;
-  }
-
-  @keyframes arrow_two {
-    0% {
-      transform: translateX(-10%);
-    }
-    50% {
-      transform: translateX(0%);
-    }
-    100% {
-      transform: translateX(-10%);
-    }
-  }
-}
-
 .pudelko--05 {
   width: 100%;
   height: 100%;
@@ -775,5 +834,51 @@ p {
 
   &:nth-of-type(3) {
     background-image: url(../src/img/antyseptyka_w_chirurgii.svg);
+  }
+}
+.page07 {
+  display: grid;
+  grid-template-columns: 30% 25% 40%;
+  grid-template-rows: 1fr;
+
+  .pudelko-na-fote {
+    width: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &:nth-of-type(1) {
+      background-image: url(../src/img/stosowanie_antybiotykow.svg);
+    }
+    &:nth-of-type(2) {
+      background-image: url(../src/img/graphic_page_07.svg);
+    }
+    &:nth-of-type(3) {
+      background-image: url(../src/img/nie_zaleca_sie.svg);
+    }
+  }
+
+  img {
+    align-self: center;
+    justify-self: center;
+    cursor: pointer;
+  }
+
+  #strzalka_07 {
+    transform: translateX(0%);
+    animation: arrow_two 1s infinite ease-in-out;
+  }
+
+  @keyframes arrow_two {
+    0% {
+      transform: translateX(-10%);
+    }
+    50% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-10%);
+    }
   }
 }
