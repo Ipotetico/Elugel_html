@@ -9,9 +9,10 @@ import Page05 from "./components/Page05";
 import Page06 from "./components/Page06";
 import Page07 from "./components/Page07";
 import Page08 from "./components/Page08";
+import Page09 from "./components/Page09";
 
 function App() {
-  const [show, setShow] = useState("showPage08");
+  const [show, setShow] = useState("showPage09");
 
   const handleShow = (showComponent) => {
     setShow(showComponent);
@@ -27,6 +28,7 @@ function App() {
       {show === "showPage06" && <Page06 show={handleShow} />}
       {show === "showPage07" && <Page07 show={handleShow} />}
       {show === "showPage08" && <Page08 show={handleShow} />}
+      {show === "showPage09" && <Page09 show={handleShow} />}
     </main>
   );
 }
