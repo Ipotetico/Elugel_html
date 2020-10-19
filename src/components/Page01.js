@@ -8,7 +8,7 @@ const Page01 = ({ show }) => {
           <div className="headline">
             <h1>
               SPECJALISTYCZNY ŻEL STOMATOLOGICZNY
-              <br />Z 0,2% Chlorheksydyna
+              <br />Z 0,2% Chlorheksydyny
             </h1>
           </div>
           <img
