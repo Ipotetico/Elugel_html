@@ -648,9 +648,9 @@ body {
 }
 
 .content.page_content_08 .pudelko-na-fote:nth-of-type(2) {
-  background-image: url(../src/img/Elugel_paczka_03.gif);
-  -webkit-filter: drop-shadow(0 1rem 1rem rgba(0, 0, 0, 0.5));
-          filter: drop-shadow(0 1rem 1rem rgba(0, 0, 0, 0.5));
+  background-image: url(../src/img/Elugel_paczka_04.gif);
+  -webkit-filter: drop-shadow(0 1rem 1rem rgba(0, 0, 0, 0.2));
+          filter: drop-shadow(0 1rem 1rem rgba(0, 0, 0, 0.2));
 }
 
 .content.page_content_08 .headline--image {
