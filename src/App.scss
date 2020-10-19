@@ -656,7 +656,7 @@ h3 {
   justify-self: center;
   text-align: center;
   text-transform: uppercase;
-  text-shadow: 0 0.3rem 0.3rem rgba(black, 0.8);
+  // text-shadow: 0 0.3rem 0.3rem rgba(black, 0.8);
   display: inline-block;
 }
 h3 {
@@ -721,24 +721,37 @@ h3 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  filter: drop-shadow(0 1rem 0.5rem rgba(black, 0.2));
 
   &.chlorheksydyna {
     background-image: url(../src/img/molekula_02_3D-2.gif);
     z-index: 100;
+    filter: drop-shadow(0 1rem 0.5rem rgba(black, 0.2));
   }
 
   &.glicerol {
     background-image: url(../src/img/molekula_01_3D.gif);
     z-index: 100;
+    filter: drop-shadow(0 1rem 0.5rem rgba(black, 0.2));
   }
 
   &.no--alco {
     display: grid;
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 20% 60% 20%;
     grid-template-rows: 1fr;
-    background-image: url(../src/img/no_alco.svg);
-    filter: drop-shadow(0 0rem 0rem rgba(black, 0));
+    // background-image: url(../src/img/no_alco.svg);
+    // filter: drop-shadow(0 0rem 0rem rgba(black, 0));
+
+    h5 {
+      font-size: 2vw;
+      color: white;
+      text-align: center;
+      align-self: center;
+      justify-self: center;
+      text-transform: uppercase;
+      font-weight: 800;
+      background-color: $elugel_green;
+      padding: 1vw;
+    }
   }
 
   &.about--glicerol {

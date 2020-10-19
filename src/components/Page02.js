@@ -27,6 +27,7 @@ const Page02 = ({ show }) => {
           </div>
           <div className="molecule no--alco">
             <div onClick={() => show("showPage01")} className="back"></div>
+            <h5>nie zawiera alkoholu</h5>
           </div>
         </section>
         <div className="presentation--side right">

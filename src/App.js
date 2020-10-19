@@ -14,7 +14,7 @@ import Page10 from "./components/Page10";
 import Page11 from "./components/Page11";
 
 function App() {
-  const [show, setShow] = useState("showPage11");
+  const [show, setShow] = useState("showPage01");
 
   const handleShow = (showComponent) => {
     setShow(showComponent);
