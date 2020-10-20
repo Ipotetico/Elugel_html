@@ -225,7 +225,7 @@ body {
   top: 0;
   left: 0;
   width: 50%;
-  z-index: 1000;
+  z-index: 100;
 }
 
 .footer {
@@ -1011,14 +1011,12 @@ h3 {
   color: white;
   font-size: 3vw;
   font-weight: 800;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   -ms-grid-column-align: center;
       justify-self: center;
   text-align: center;
   text-transform: uppercase;
-  display: inline-block;
 }
 
 h3 {

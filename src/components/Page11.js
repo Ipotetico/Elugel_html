@@ -8,7 +8,7 @@ const Page11 = ({ show }) => {
           <div className="last-page-graphics"></div>
           <div className="graphics-page-11">
             <div className="buttons">
-              <div onClick={() => show("showPage09")} className="back"></div>
+              <div onClick={() => show("showPage10")} className="back"></div>
               <div className="logo--PF"></div>
 
               <div className=""></div>

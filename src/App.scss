@@ -75,7 +75,7 @@ body {
   top: 0;
   left: 0;
   width: 50%;
-  z-index: 1000;
+  z-index: 100;
 }
 
 .footer {
@@ -652,12 +652,12 @@ h3 {
   color: white;
   font-size: 3vw;
   font-weight: 800;
-  align-self: center;
+  align-self: flex-end;
   justify-self: center;
   text-align: center;
   text-transform: uppercase;
   // text-shadow: 0 0.3rem 0.3rem rgba(black, 0.8);
-  display: inline-block;
+  // display: inline-block;
 }
 h3 {
   font-size: 2vw;
