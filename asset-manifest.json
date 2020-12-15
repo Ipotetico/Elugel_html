@@ -1,41 +1,23 @@
 {
   "files": {
-    "main.css": "/Elugel_html/static/css/main.e5f96ab4.chunk.css",
-    "main.js": "/Elugel_html/static/js/main.78bcb0aa.chunk.js",
-    "main.js.map": "/Elugel_html/static/js/main.78bcb0aa.chunk.js.map",
+    "main.css": "/Elugel_html/static/css/main.a6ad220b.chunk.css",
+    "main.js": "/Elugel_html/static/js/main.7536bfd9.chunk.js",
+    "main.js.map": "/Elugel_html/static/js/main.7536bfd9.chunk.js.map",
     "runtime-main.js": "/Elugel_html/static/js/runtime-main.1575933d.js",
     "runtime-main.js.map": "/Elugel_html/static/js/runtime-main.1575933d.js.map",
-    "static/js/2.2419c074.chunk.js": "/Elugel_html/static/js/2.2419c074.chunk.js",
-    "static/js/2.2419c074.chunk.js.map": "/Elugel_html/static/js/2.2419c074.chunk.js.map",
+    "static/js/2.c10747aa.chunk.js": "/Elugel_html/static/js/2.c10747aa.chunk.js",
+    "static/js/2.c10747aa.chunk.js.map": "/Elugel_html/static/js/2.c10747aa.chunk.js.map",
     "index.html": "/Elugel_html/index.html",
-    "precache-manifest.b6060ecb0496e83e5e68380d21c59841.js": "/Elugel_html/precache-manifest.b6060ecb0496e83e5e68380d21c59841.js",
+    "precache-manifest.581bd1e0b7b32cdc0408c5a02f1f14d0.js": "/Elugel_html/precache-manifest.581bd1e0b7b32cdc0408c5a02f1f14d0.js",
     "service-worker.js": "/Elugel_html/service-worker.js",
-    "static/css/main.e5f96ab4.chunk.css.map": "/Elugel_html/static/css/main.e5f96ab4.chunk.css.map",
-    "static/js/2.2419c074.chunk.js.LICENSE.txt": "/Elugel_html/static/js/2.2419c074.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/Elugel_html/static/media/zeby_str_07_05.0fd09213.jpg",
-    "static/media/Elugel_logo.svg": "/Elugel_html/static/media/Elugel_logo.f040e554.svg",
-    "static/media/Elugel_paczka.gif": "/Elugel_html/static/media/Elugel_paczka.3b97bb95.gif",
-    "static/media/antyseptyka_mozliwa.svg": "/Elugel_html/static/media/antyseptyka_mozliwa.b28bac5f.svg",
-    "static/media/czasteczka_tlo_01.png": "/Elugel_html/static/media/czasteczka_tlo_01.bf08d699.png",
-    "static/media/dalej.svg": "/Elugel_html/static/media/dalej.58158ff5.svg",
-    "static/media/duze_opakowanie.svg": "/Elugel_html/static/media/duze_opakowanie.4f75283c.svg",
-    "static/media/ikona_01.svg": "/Elugel_html/static/media/ikona_01.a860516f.svg",
-    "static/media/ikona_02.svg": "/Elugel_html/static/media/ikona_02.2a916044.svg",
-    "static/media/ikona_03.svg": "/Elugel_html/static/media/ikona_03.36764cc5.svg",
-    "static/media/kompleksowa_opieka.svg": "/Elugel_html/static/media/kompleksowa_opieka.7f2e70a7.svg",
-    "static/media/miejscowa_antyseptyka.svg": "/Elugel_html/static/media/miejscowa_antyseptyka.49eeae0c.svg",
-    "static/media/niebedny_element.svg": "/Elugel_html/static/media/niebedny_element.d46aa07a.svg",
-    "static/media/sposoby_aplikacji.svg": "/Elugel_html/static/media/sposoby_aplikacji.43429c4e.svg",
-    "static/media/strzalka_lamana.svg": "/Elugel_html/static/media/strzalka_lamana.2a556f54.svg",
-    "static/media/tubka.jpg": "/Elugel_html/static/media/tubka.8cd46d4f.jpg",
-    "static/media/wykres_str_03.svg": "/Elugel_html/static/media/wykres_str_03.06f6ee81.svg",
-    "static/media/zastosowanie_02.svg": "/Elugel_html/static/media/zastosowanie_02.f7222238.svg",
-    "static/media/zielone_kolko.svg": "/Elugel_html/static/media/zielone_kolko.e8fa3e68.svg"
+    "static/css/main.a6ad220b.chunk.css.map": "/Elugel_html/static/css/main.a6ad220b.chunk.css.map",
+    "static/js/2.c10747aa.chunk.js.LICENSE.txt": "/Elugel_html/static/js/2.c10747aa.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/Elugel_html/static/media/fontfabric_-_glober_semibold-webfont.8ef26e11.woff"
   },
   "entrypoints": [
     "static/js/runtime-main.1575933d.js",
-    "static/js/2.2419c074.chunk.js",
-    "static/css/main.e5f96ab4.chunk.css",
-    "static/js/main.78bcb0aa.chunk.js"
+    "static/js/2.c10747aa.chunk.js",
+    "static/css/main.a6ad220b.chunk.css",
+    "static/js/main.7536bfd9.chunk.js"
   ]
 }
