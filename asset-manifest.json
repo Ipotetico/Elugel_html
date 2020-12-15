@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Elugel_html/static/css/main.a612b35d.chunk.css",
-    "main.js": "/Elugel_html/static/js/main.b87125e9.chunk.js",
-    "main.js.map": "/Elugel_html/static/js/main.b87125e9.chunk.js.map",
+    "main.js": "/Elugel_html/static/js/main.109439f7.chunk.js",
+    "main.js.map": "/Elugel_html/static/js/main.109439f7.chunk.js.map",
     "runtime-main.js": "/Elugel_html/static/js/runtime-main.1575933d.js",
     "runtime-main.js.map": "/Elugel_html/static/js/runtime-main.1575933d.js.map",
     "static/js/2.c10747aa.chunk.js": "/Elugel_html/static/js/2.c10747aa.chunk.js",
     "static/js/2.c10747aa.chunk.js.map": "/Elugel_html/static/js/2.c10747aa.chunk.js.map",
     "index.html": "/Elugel_html/index.html",
-    "precache-manifest.badffd1a6bc1f2737c7bae5c3f39faec.js": "/Elugel_html/precache-manifest.badffd1a6bc1f2737c7bae5c3f39faec.js",
+    "precache-manifest.0ee6f0173d455585e3158b1479978479.js": "/Elugel_html/precache-manifest.0ee6f0173d455585e3158b1479978479.js",
     "service-worker.js": "/Elugel_html/service-worker.js",
     "static/css/main.a612b35d.chunk.css.map": "/Elugel_html/static/css/main.a612b35d.chunk.css.map",
     "static/js/2.c10747aa.chunk.js.LICENSE.txt": "/Elugel_html/static/js/2.c10747aa.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.1575933d.js",
     "static/js/2.c10747aa.chunk.js",
     "static/css/main.a612b35d.chunk.css",
-    "static/js/main.b87125e9.chunk.js"
+    "static/js/main.109439f7.chunk.js"
   ]
 }
