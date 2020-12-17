@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "66d873f1e01d4c7aae4b0bed5b63446e",
+    "revision": "e1b95fbaf813c380c0231dbc31412ffd",
     "url": "/Elugel_html/index.html"
   },
   {
-    "revision": "f6090ad3f4e152e5fe10",
+    "revision": "6daa159f3ade9e728c0e",
     "url": "/Elugel_html/static/css/main.6b9cd9f7.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Elugel_html/static/js/2.c10747aa.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f6090ad3f4e152e5fe10",
-    "url": "/Elugel_html/static/js/main.b89788d8.chunk.js"
+    "revision": "6daa159f3ade9e728c0e",
+    "url": "/Elugel_html/static/js/main.b5da65d3.chunk.js"
   },
   {
     "revision": "0ad4440ddb57be305eaa",
