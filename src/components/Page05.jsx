@@ -7,23 +7,32 @@ const Page05 = ({ show }) => {
   return (
     <>
       <main id='page05' className='main--container'>
-        <Background />
+        <Background name='czasteczka_tlo_03.jpg' />
         <div className='page one'>
           <Logo />
           <div className='box row--25--1--5'>
             <img
+              style={{ zIndex: '10' }}
+              className='headline'
               src={process.env.PUBLIC_URL + '/img/niebedny_element.svg'}
               alt='headline'
             />
             <div className='box two--rows'>
-              <div className='box absolute right'>
+              <div style={{ zIndex: '0' }} className='box absolute right'>
                 <img
-                  src={process.env.PUBLIC_URL + '/img/Elugel_paczka_02.gif'}
+                  style={{ zIndex: '-1' }}
+                  className='paczka'
+                  src={
+                    process.env.PUBLIC_URL +
+                    '/img/Elugel-polski-pudełko-poziom.jpg'
+                  }
                   alt='headline'
                 />
               </div>
               <div className='box'>
                 <img
+                  className='headline'
+                  style={{ zIndex: '10' }}
                   src={
                     process.env.PUBLIC_URL + '/img/bezposrednia_aplikacja.svg'
                   }

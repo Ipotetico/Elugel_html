@@ -1,13 +1,10 @@
 import React from 'react';
 
-const Background = () => {
+const Background = ({ name }) => {
   return (
     <>
-      <div className='background'>
-        <img
-          src={process.env.PUBLIC_URL + '/img/czasteczka_tlo_01.png'}
-          alt=''
-        />
+      <div style={{ zIndex: '-5' }} className='background'>
+        <img src={process.env.PUBLIC_URL + `/img/${name}`} alt='background' />
         <img
           src={process.env.PUBLIC_URL + '/img/Elugel_logo.svg'}
           alt='Elugel logo'

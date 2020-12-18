@@ -1,40 +1,33 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Background from './Background';
 import Logo from './Logo';
 import PageBtn from './PageBtn';
 
 const Page06 = ({ show }) => {
-  const [grow, setGrow] = useState(false);
-
   return (
     <>
       <main id='page06' className='main--container'>
-        <Background />
+        <Background name='czasteczka_tlo_03.jpg' />
         <div className='page one'>
           <Logo />
           <div className='box row--25--1--5'>
             <img
+              className='headline'
               src={process.env.PUBLIC_URL + '/img/kompleksowa_opieka.svg'}
               alt='headline'
             />
-            <div className='box three--rows'>
-              <div style={{ top: '32%' }} className='box absolute'>
+            <div className='box two--rows'>
+              <div style={{ zIndex: '0' }} className='box absolute right'>
                 <img
-                  onClick={() => setGrow(!grow)}
-                  style={{
-                    transform: grow ? 'scale(1.7)' : 'scale(1)',
-                    filter: grow
-                      ? 'drop-shadow(0, 5px, 30px, rgba(0,0,0, 0.5))'
-                      : 'drop-shadow(0, 0px, 0px, rgba(0,0,0, 0.5))',
-                  }}
-                  id='zestaw'
-                  src={process.env.PUBLIC_URL + '/img/pudlo_zestaw.gif'}
+                  className='set'
+                  src={process.env.PUBLIC_URL + '/img/Zestaw.png'}
                   alt='headline'
                 />
               </div>
-              <div className=''></div>
               <div className='box'>
                 <img
+                  className='headline'
+                  style={{ width: '65%', zIndex: '10' }}
                   src={
                     process.env.PUBLIC_URL + '/img/stosowanie_antyseptyki.svg'
                   }

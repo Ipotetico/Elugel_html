@@ -10,14 +10,10 @@ const Page03 = ({ show }) => {
   return (
     <>
       <main id='page10' className='main--container'>
-        <Background />
+        <Background name='czasteczka_tlo_03.jpg' />
         <div className='page three'>
           <Logo />
-          <div className='box row--25--1'>
-            <img
-              src={process.env.PUBLIC_URL + '/img/klinicznie_potwierdzona.svg'}
-              alt='headline'
-            />
+          <div className='box'>
             <div className='box col--15--1'>
               <img
                 src={process.env.PUBLIC_URL + '/img/strzalka_lamana.svg'}

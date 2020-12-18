@@ -7,11 +7,12 @@ const Page08 = ({ show }) => {
   return (
     <>
       <main id='page08' className='main--container'>
-        <Background />
+        <Background name='czasteczka_tlo_03.jpg' />
         <div className='page one'>
           <Logo />
           <div className='box row--20--1'>
             <img
+              className='headline'
               src={process.env.PUBLIC_URL + '/img/duze_opakowanie.svg'}
               alt='headline'
             />
@@ -19,13 +20,20 @@ const Page08 = ({ show }) => {
               <img
                 className='pulse'
                 src={process.env.PUBLIC_URL + '/img/40_ml.svg'}
-                alt='headline'
+                alt='40 ml'
               />
               <div style={{ bottom: 0 }} className='box absolute'>
                 <img
-                  style={{ position: 'absolute', bottom: 0 }}
-                  src={process.env.PUBLIC_URL + '/img/Elugel_paczka_03.gif'}
-                  alt='headline'
+                  className='paczka'
+                  style={{
+                    zIndex: '-1',
+                    transform: 'translate(0%, 20%) scale(0.7)',
+                  }}
+                  src={
+                    process.env.PUBLIC_URL +
+                    '/img/Elugel-polski-pudełko-poziom.png'
+                  }
+                  alt='paczka'
                 />
               </div>
             </div>

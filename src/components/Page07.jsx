@@ -7,11 +7,12 @@ const Page07 = ({ show }) => {
   return (
     <>
       <main id='page07' className='main--container'>
-        <Background />
+        <Background name='czasteczka_tlo_03.jpg' />
         <div className='page one'>
           <Logo />
           <div className='box row--25--1--5'>
             <img
+              className='headline'
               src={process.env.PUBLIC_URL + '/img/zastosowanie_02.svg'}
               alt='headline'
             />

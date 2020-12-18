@@ -7,7 +7,7 @@ const Page11 = ({ show }) => {
   return (
     <>
       <main id='page11' className='main--container'>
-        <Background />
+        <Background name='czasteczka_tlo_03.jpg' />
         <div className='page one'>
           <Logo />
           <div className='box'>

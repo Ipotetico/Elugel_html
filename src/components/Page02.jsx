@@ -7,12 +7,13 @@ const Page02 = ({ show }) => {
   return (
     <>
       <main id='page02' className='main--container'>
-        <Background />
+        <Background name='czasteczka_tlo_03.jpg' />
         <div className='page two'>
           <Logo />
           <div className='box col--75--25'>
             <div className='box row--15--1--15'>
               <img
+                className='headline'
                 src={process.env.PUBLIC_URL + '/img/miejscowa_antyseptyka.svg'}
                 alt='headline'
               />
@@ -59,27 +60,30 @@ const Page02 = ({ show }) => {
               </div>
               <div className='box footer three'>
                 <PageBtn show={show} icon='back_normal' page='page01' />
-                <h1 className='green--head'>bez dodatku alkoholu</h1>
+                <h1 className='green--head'>Nie zawiera alkoholu</h1>
                 <PageBtn show={show} icon='dalej_normal' page='page03' />
               </div>
             </div>
             <div className='box three--rows'>
               <div className='box'>
                 <img
+                  className='teeth'
                   src={process.env.PUBLIC_URL + '/img/protetyka.svg'}
                   alt='protetyka'
                 />
               </div>
               <div className='box'>
                 <img
+                  className='teeth'
                   src={process.env.PUBLIC_URL + '/img/periodontologia.svg'}
-                  alt='protetyka'
+                  alt='periodontologia'
                 />
               </div>
               <div className='box'>
                 <img
+                  className='teeth'
                   src={process.env.PUBLIC_URL + '/img/chirurgia.svg'}
-                  alt='protetyka'
+                  alt='chirurgia'
                 />
               </div>
             </div>

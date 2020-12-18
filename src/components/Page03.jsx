@@ -32,11 +32,12 @@ const Page03 = ({ show }) => {
             }
           />
         )}
-        <Background />
+        <Background name='czasteczka_tlo_03.jpg' />
         <div className='page one'>
           <Logo />
           <div className='box row--25--1--5'>
             <img
+              className='headline'
               src={process.env.PUBLIC_URL + '/img/klinicznie_potwierdzona.svg'}
               alt='headline'
             />

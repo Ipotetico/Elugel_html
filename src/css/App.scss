@@ -18,7 +18,8 @@ h3 {
   justify-self: center;
   text-align: center;
   text-transform: uppercase;
-  color: white;
+  color: $elugel_blue;
+  z-index: 100;
 }
 
 h1 {
@@ -31,6 +32,7 @@ h1 {
 }
 
 h3 {
+  text-transform: none;
   font-size: 1.5vw;
 
   &.green--head {
@@ -190,7 +192,7 @@ img {
     z-index: 100;
     width: 80%;
     height: 80%;
-    background: linear-gradient(white, $elugel_green);
+    background: linear-gradient(white, lighten($elugel_green, 20));
     border-radius: 5vw;
     display: flex;
     flex-direction: column;
@@ -470,4 +472,69 @@ img {
   grid-template-columns: 5% 1fr;
   grid-template-rows: repeat(11, 1fr) 2fr;
   background-color: white;
+}
+
+.headline {
+  animation: headline 1s ease-in-out;
+  transform: translateX(0%);
+
+  @keyframes headline {
+    0% {
+      transform: translateX(-150%);
+    }
+    100% {
+      transform: translateX(-0%);
+    }
+  }
+}
+
+.paczka {
+  filter: drop-shadow(0, 1vw, 3vw, rgba(black, 0.5));
+}
+
+.teeth {
+  transform: translateX(0%);
+  animation: teeth 1s ease-in-out;
+
+  @keyframes teeth {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+}
+
+.chevron {
+  transform: translateY(0%);
+  opacity: 1;
+  animation: chevron 1s ease-in-out;
+
+  @keyframes chevron {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+  }
+}
+
+.paczka {
+  transform: translate(15%, -25%) scale(0.7);
+}
+
+.set {
+  transform: translate(25%, -20%) scale(0.7);
+}
+
+.bkgrd {
+  align-self: center;
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

@@ -16,49 +16,29 @@ const Page09 = ({ show }) => {
         {popup === 'popup02' && (
           <Popup setPopup={setPopup} graphics='masaz_dziasel' />
         )}
-        <Background />
+        <Background name='czasteczka_tlo_03.jpg' />
         <div className='page one'>
           <Logo />
           <div className='box row--20--1'>
             <img
+              className='headline'
               src={process.env.PUBLIC_URL + '/img/sposoby_aplikacji.svg'}
               alt='headline'
             />
+
             <div className='box two--cols'>
-              <div
-                style={{
-                  maxWidth: '100%',
-                  maxHeight: '100%',
-                }}
-                className='box align'>
-                <img
-                  onClick={() => setPopup('popup01')}
-                  style={{
-                    alignSelf: 'center',
-                    maxWidth: '100%',
-                    maxHeight: '100%',
-                  }}
-                  src={process.env.PUBLIC_URL + '/img/aplikacja_zelu.svg'}
-                  alt='headline'
-                />
-              </div>
-              <div
-                style={{
-                  maxWidth: '100%',
-                  maxHeight: '100%',
-                }}
-                className='box align'>
-                <img
-                  onClick={() => setPopup('popup02')}
-                  style={{
-                    alignSelf: 'center',
-                    maxWidth: '100%',
-                    maxHeight: '100%',
-                  }}
-                  src={process.env.PUBLIC_URL + '/img/masaz_dziasel.svg'}
-                  alt='headline'
-                />
-              </div>
+              <img
+              onClick={()=>setPopup('popup01')}
+                style={{ alignSelf: 'center', justifySelf: 'center' }}
+                src={process.env.PUBLIC_URL + '/img/aplikacja_zelu.svg'}
+                alt='headline'
+              />
+              <img
+                onClick={()=>setPopup('popup02')}
+                style={{ alignSelf: 'center', justifySelf: 'center' }}
+                src={process.env.PUBLIC_URL + '/img/masaz_dziasel.svg'}
+                alt='headline'
+              />
             </div>
           </div>
           <div className='box footer four'>
