@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Elugel_html/precache-manifest.8194781cade5c37d94a5a6bc926c0e8f.js"
+  "/Elugel_html/precache-manifest.5f7e750a95460481838afd38869abee4.js"
 );
 
 self.addEventListener('message', (event) => {
