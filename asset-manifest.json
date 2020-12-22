@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/Elugel_html/static/css/main.9c5004f7.chunk.css",
-    "main.js": "/Elugel_html/static/js/main.872a01a3.chunk.js",
-    "main.js.map": "/Elugel_html/static/js/main.872a01a3.chunk.js.map",
+    "main.css": "/Elugel_html/static/css/main.2b5c9c56.chunk.css",
+    "main.js": "/Elugel_html/static/js/main.d670018b.chunk.js",
+    "main.js.map": "/Elugel_html/static/js/main.d670018b.chunk.js.map",
     "runtime-main.js": "/Elugel_html/static/js/runtime-main.1575933d.js",
     "runtime-main.js.map": "/Elugel_html/static/js/runtime-main.1575933d.js.map",
     "static/js/2.c10747aa.chunk.js": "/Elugel_html/static/js/2.c10747aa.chunk.js",
     "static/js/2.c10747aa.chunk.js.map": "/Elugel_html/static/js/2.c10747aa.chunk.js.map",
     "index.html": "/Elugel_html/index.html",
-    "precache-manifest.aa5f3ee0023a904a326d6464713176ac.js": "/Elugel_html/precache-manifest.aa5f3ee0023a904a326d6464713176ac.js",
+    "precache-manifest.7a2160e1de5187a5a62420c6cacebcea.js": "/Elugel_html/precache-manifest.7a2160e1de5187a5a62420c6cacebcea.js",
     "service-worker.js": "/Elugel_html/service-worker.js",
-    "static/css/main.9c5004f7.chunk.css.map": "/Elugel_html/static/css/main.9c5004f7.chunk.css.map",
+    "static/css/main.2b5c9c56.chunk.css.map": "/Elugel_html/static/css/main.2b5c9c56.chunk.css.map",
     "static/js/2.c10747aa.chunk.js.LICENSE.txt": "/Elugel_html/static/js/2.c10747aa.chunk.js.LICENSE.txt",
     "static/media/App.css": "/Elugel_html/static/media/fontfabric_-_glober_semibold-webfont.8ef26e11.woff"
   },
   "entrypoints": [
     "static/js/runtime-main.1575933d.js",
     "static/js/2.c10747aa.chunk.js",
-    "static/css/main.9c5004f7.chunk.css",
-    "static/js/main.872a01a3.chunk.js"
+    "static/css/main.2b5c9c56.chunk.css",
+    "static/js/main.d670018b.chunk.js"
   ]
 }
