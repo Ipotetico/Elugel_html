@@ -21,7 +21,14 @@ const Popup = ({ setPopup, text, logo, grin, graphics }) => {
           />
         )}
 
-        <h1 style={{ color: grin ? '#ccd615' : ' #005ca7' }}>{text}</h1>
+        <h1
+          style={{
+            textAlign: 'center',
+            textTransform: 'uppercase',
+            color: grin ? '#ccd615' : ' #005ca7',
+          }}>
+          {text}
+        </h1>
       </div>
     </>
   );

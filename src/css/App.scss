@@ -32,7 +32,7 @@ h1 {
 }
 
 h3 {
-  text-transform: none;
+  // text-transform: none;
   font-size: 1.5vw;
 
   &.green--head {
@@ -46,7 +46,7 @@ h3 {
 
 p {
   font-family: $GloberRegular, sans-serif;
-  font-size: 0.8vw;
+  font-size: 0.5vw;
   align-self: center;
   justify-self: center;
   padding: 0 2vw;
@@ -61,7 +61,7 @@ sup {
 //STYLES
 
 .main--container {
-  // position: fixed;
+  position: fixed;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -92,7 +92,7 @@ img {
   &.one {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 20% 1fr 15%;
+    grid-template-rows: 18% 1fr 15%;
   }
 
   &.two {
@@ -104,7 +104,13 @@ img {
   &.three {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 20% 1fr;
+    grid-template-rows: 18% 1fr;
+  }
+
+  &.four {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% 1fr 20%;
   }
 }
 
@@ -120,6 +126,10 @@ img {
   width: 100%;
   height: 100%;
 
+  .icon--one {
+    width: 120%;
+  }
+
   &.align {
     display: flex;
     align-items: center;
@@ -132,11 +142,11 @@ img {
 
   &.footer {
     display: grid;
-
     grid-template-rows: 1fr;
     background-color: white;
 
     &.three {
+      height: 10vw;
       grid-template-columns: 20% 1fr 20%;
     }
 
@@ -189,7 +199,7 @@ img {
 
   &.popup {
     position: absolute;
-    z-index: 100;
+    z-index: 200;
     width: 80%;
     height: 80%;
     background: linear-gradient(white, lighten($elugel_green, 20));
@@ -374,10 +384,22 @@ img {
     }
   }
 
-  &.row--25--1--5 {
+  &.row--15--1--20 {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 25% 1fr 5%;
+    grid-template-rows: 15% 1fr 20%;
+    background-color: white;
+
+    img {
+      align-self: flex-start;
+      justify-self: center;
+    }
+  }
+  &.row--25--1--5 {
+    z-index: 100;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 28% 1fr 5%;
     background-color: white;
 
     img {
@@ -409,25 +431,35 @@ img {
     img {
       align-self: flex-start;
     }
+  }
+  &.row--18--1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15% 1fr;
+    background-color: white;
 
-    h1 {
-      justify-self: flex-start;
-      text-align: left;
-      text-transform: none;
-      color: $elugel_blue;
-      font-family: $GloberBold, sans-serif;
-    }
-
-    p {
-      font-size: 1.5vw;
-      justify-self: flex-start;
+    img {
       align-self: flex-start;
-      text-align: left;
-      text-transform: none;
-      color: $elugel_blue;
-      font-family: $GloberBold, sans-serif;
-      transition: all 0.5s;
     }
+  }
+
+  h1 {
+    justify-self: flex-start;
+    text-align: left;
+    text-transform: none;
+    color: $elugel_blue;
+    font-family: $GloberBold, sans-serif;
+  }
+
+  .list--text {
+    font-size: 1.5vw;
+    justify-self: flex-start;
+    align-self: flex-start;
+    text-align: left;
+    text-transform: none;
+    color: $elugel_blue;
+    font-family: $GloberBold, sans-serif;
+    transition: all 0.5s;
   }
 
   &.row--25--1 {
@@ -470,7 +502,7 @@ img {
 .list {
   display: grid;
   grid-template-columns: 5% 1fr;
-  grid-template-rows: repeat(11, 1fr) 2fr;
+  grid-template-rows: repeat(10, 1fr) 1.5fr;
   background-color: white;
 }
 
@@ -494,7 +526,18 @@ img {
 
 .teeth {
   transform: translateX(0%);
-  animation: teeth 1s ease-in-out;
+
+  &.one {
+    animation: teeth 1s ease-in-out;
+  }
+
+  &.two {
+    animation: teeth 1.5s ease-in-out;
+  }
+
+  &.three {
+    animation: teeth 2s ease-in-out;
+  }
 
   @keyframes teeth {
     0% {
@@ -528,7 +571,7 @@ img {
 }
 
 .set {
-  transform: translate(25%, -20%) scale(0.7);
+  transform: translate(30%, -20%) scale(0.8);
 }
 
 .bkgrd {

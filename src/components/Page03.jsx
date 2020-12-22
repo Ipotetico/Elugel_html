@@ -25,8 +25,9 @@ const Page03 = ({ show }) => {
             logo
             setPopup={setPopup}
             text={
-              <h1>
-                DZIAŁA PRZECIWGRZYBICZO (ZMNIEJSZA <br /> KOLONIZACJĘ GRZYBÓW{' '}
+              <h1 style={{ textAlign: 'center' }}>
+                DZIAŁA PRZECIWGRZYBICZO (ZMNIEJSZA KOLONIZACJĘ <br /> GRZYBÓW
+                <br />
                 <span className='italic'> CANDIDA ALBICANS </span>)
               </h1>
             }

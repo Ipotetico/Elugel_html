@@ -11,7 +11,7 @@ const Page02 = ({ show }) => {
         <div className='page two'>
           <Logo />
           <div className='box col--75--25'>
-            <div className='box row--15--1--15'>
+            <div className='box row--15--1--20'>
               <img
                 className='headline'
                 src={process.env.PUBLIC_URL + '/img/miejscowa_antyseptyka.svg'}
@@ -27,7 +27,7 @@ const Page02 = ({ show }) => {
 
                   <img
                     className='chevron'
-                    src={process.env.PUBLIC_URL + '/img/o_chlorchex.svg'}
+                    src={process.env.PUBLIC_URL + '/img/o_glicerolu.svg'}
                     alt='chlorcheksydyna'
                   />
                 </div>
@@ -53,35 +53,49 @@ const Page02 = ({ show }) => {
 
                   <img
                     className='chevron'
-                    src={process.env.PUBLIC_URL + '/img/o_glicerolu.svg'}
+                    src={process.env.PUBLIC_URL + '/img/o_chlorchex.svg'}
                     alt='glicerol'
                   />
                 </div>
               </div>
               <div className='box footer three'>
-                <PageBtn show={show} icon='back_normal' page='page01' />
-                <h1 className='green--head'>Nie zawiera alkoholu</h1>
-                <PageBtn show={show} icon='dalej_normal' page='page03' />
+                <PageBtn
+                  style={{ alignSelf: 'flex-start', justifySelf: 'center' }}
+                  show={show}
+                  icon='back_normal'
+                  page='page01'
+                />
+                <h1
+                  style={{ alignSelf: 'flex-start', justifySelf: 'center' }}
+                  className='green--head'>
+                  Nie zawiera alkoholu
+                </h1>
+                <PageBtn
+                  style={{ alignSelf: 'flex-start', justifySelf: 'center' }}
+                  show={show}
+                  icon='dalej_normal'
+                  page='page03'
+                />
               </div>
             </div>
             <div className='box three--rows'>
               <div className='box'>
                 <img
-                  className='teeth'
+                  className='teeth one'
                   src={process.env.PUBLIC_URL + '/img/protetyka.svg'}
                   alt='protetyka'
                 />
               </div>
               <div className='box'>
                 <img
-                  className='teeth'
+                  className='teeth two'
                   src={process.env.PUBLIC_URL + '/img/periodontologia.svg'}
                   alt='periodontologia'
                 />
               </div>
               <div className='box'>
                 <img
-                  className='teeth'
+                  className='teeth three'
                   src={process.env.PUBLIC_URL + '/img/chirurgia.svg'}
                   alt='chirurgia'
                 />

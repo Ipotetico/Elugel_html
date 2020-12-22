@@ -15,7 +15,7 @@ const Page04 = ({ show }) => {
             graphics=''
             setPopup={setPopup}
             grin
-            text='Stosowanie antybiotyków jest wciąż powszechne, mimo ograniczenia wskazań w obecnych wytycznych'
+            text='Stosowanie antybiotyków jest wciąż powszechne, mimo ograniczania wskazań w obecnych wytycznych'
           />
         )}
 
@@ -24,11 +24,12 @@ const Page04 = ({ show }) => {
             graphics=''
             setPopup={setPopup}
             text={
-              <h1>
-                Nie zaleca się rutynowego stosowania profilaktyki antybiotykowej
+              <h1 style={{ textAlign: 'center', textTransform: 'uppercase' }}>
+                Nie zaleca się rutynowego stosowania profilaktyki antybiotykowej{' '}
+                <br />
                 w zabiegach wszczepiania implantu zębowego <br /> u pacjentów
                 immunokompetentnych
-                <sup> (*) </sup>
+                <sup> </sup>
               </h1>
             }
           />

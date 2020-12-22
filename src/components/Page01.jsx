@@ -9,18 +9,18 @@ const Page01 = ({ show }) => {
     <>
       <main id='page01' className='main--container'>
         <Background name='czasteczka_tlo_03.jpg' />
-        <div className='page one'>
+        <div className='page four'>
           <Logo />
           <div className='box one'>
-            <h1>
+            <h1 style={{ textAlign: 'center', transform: 'translate(35%)' }}>
               SPECJALISTYCZNY ŻEL STOMATOLOGICZNY <br /> Z CHLORHEKSYDYNĄ 0,2%
             </h1>
             <img
-              style={{ zIndex: '-5' }}
+              style={{ width: '80%', zIndex: '-5' }}
               src={process.env.PUBLIC_URL + '/img/Elugel_polski.png'}
               alt=''
             />
-            <h3 style={{ zIndex: '100' }}>
+            <h3 style={{ textTransform: 'none', fontSize: '2vw' }}>
               O specjalnie przystosowanej formule:
             </h3>
           </div>

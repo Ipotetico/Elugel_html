@@ -46,7 +46,7 @@ const Page05 = ({ show }) => {
                 />
               </div>
             </div>
-            <p>
+            <p style={{ zIndex: '100' }}>
               <sup>(2)</sup> Dominiak M, Shuleva S, Silvestros S, Alcoforado G.
               A prospective observational study on perioperative use of
               antibacterial agents in implant surgery [published online as ahead
